@@ -4,10 +4,13 @@ from django.template import RequestContext
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 # from fileUpload.templates.fileUpload import list.html
+from django.views.decorators.csrf import csrf_exempt
 
 from fileUpload.models import Document
 from fileUpload.forms import DocumentForm
 
+
+@csrf_exempt
 def list(request):
     # Handle file upload
     if request.method == 'POST':
