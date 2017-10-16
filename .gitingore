@@ -1,0 +1,17 @@
+# virtualenv
+.venv/
+venv/
+ENV/
+include/
+lib/
+bin/
+.python-version
+
+# git config
+gitconfig
+gitconfig_stomachfat
+
+# Distribution / packaging
+.Python
+lib/
+node_modules/
