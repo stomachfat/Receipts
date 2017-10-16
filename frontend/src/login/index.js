@@ -1,9 +1,6 @@
 import { connect } from 'react-redux';
 import Login from './Login';
-import noop from 'lodash/noop';
 import { login } from '../util/Auth';
-
-const mapStateToProps = noop;
 
 const mapDispatchToProps = (dispatch) => ({
   tryAuth: (username, password) => {
@@ -11,4 +8,4 @@ const mapDispatchToProps = (dispatch) => ({
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default connect(null, mapDispatchToProps)(Login);

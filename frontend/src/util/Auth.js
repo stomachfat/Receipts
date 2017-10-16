@@ -10,10 +10,6 @@ export function InvalidCredentialsException(message) {
 }
 
 export function login(username, password) {
-  const a = URL;
-  const b = LOGIN;
-  const c = process;
-  debugger;
   return axios
     .post(URL + LOGIN, {
       username,
