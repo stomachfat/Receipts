@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 class Login extends Component {
-  // constructor() {
-  //   super();
-  // }
-
   handleSubmit = () => {
     const username = this.usernameInput.value;
     const password = this.passwordInput.value;
